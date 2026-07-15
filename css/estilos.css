@@ -1,0 +1,426 @@
+/*======================================
+    ESTILOS GENERALES
+=======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/*======================================
+    HEADER
+=======================================*/
+
+header{
+    width:100%;
+    background:#0d6efd;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+/*======================================
+    HERO
+=======================================*/
+
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    padding:80px 0;
+}
+
+.hero-texto{
+    flex:1;
+}
+
+.hero-texto h2{
+    font-size:50px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.hero-texto p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-imagen{
+    flex:1;
+}
+
+.hero-imagen img{
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/*======================================
+    BOTONES
+=======================================*/
+
+.boton{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    transition:.4s;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#084298;
+    transform:translateY(-4px);
+}
+
+/*======================================
+    BENEFICIOS
+=======================================*/
+
+.beneficios{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.beneficios h2{
+    font-size:38px;
+    margin-bottom:40px;
+    color:#0d6efd;
+}
+
+.tarjetas{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:90px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0d6efd;
+}
+
+/*======================================
+    NOSOTROS
+=======================================*/
+
+.nosotros{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.nosotros img{
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.nosotros h2{
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.nosotros p{
+    margin-bottom:25px;
+}
+
+/*======================================
+    ESTADISTICAS
+=======================================*/
+
+.estadisticas{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.estadisticas h2{
+    font-size:45px;
+}
+
+.estadisticas p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/*======================================
+    TESTIMONIOS
+=======================================*/
+
+.testimonios{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.testimonios h2{
+    font-size:38px;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.opiniones{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.cliente{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.cliente:hover{
+    transform:scale(1.05);
+}
+
+.cliente img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+/*======================================
+    CTA
+=======================================*/
+
+.cta{
+    background:#084298;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/*======================================
+    FOOTER
+=======================================*/
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/*======================================
+    RESPONSIVE
+=======================================*/
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.nosotros{
+    flex-direction:column;
+    text-align:center;
+}
+
+.tarjetas{
+    flex-direction:column;
+}
+
+.opiniones{
+    flex-direction:column;
+}
+
+.estadisticas{
+    flex-direction:column;
+    gap:35px;
+}
+
+nav ul{
+    gap:15px;
+}
+
+.hero-texto h2{
+    font-size:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.logo{
+    font-size:24px;
+}
+
+.contenedor{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero{
+    padding:50px 0;
+}
+
+.hero-texto h2{
+    font-size:32px;
+}
+
+.hero-texto p{
+    font-size:16px;
+}
+
+.beneficios h2,
+.testimonios h2,
+.nosotros h2,
+.cta h2{
+    font-size:30px;
+}
+
+.boton{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-texto h2{
+    font-size:28px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.card,
+.cliente{
+    padding:20px;
+}
+
+}
+
+/*==============================
+ICONOS
+===============================*/
+
+.icono{
+
+    font-size:70px;
+
+    color:#0d6efd;
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+}
+
+.card:hover .icono{
+
+    color:#20c997;
+
+    transform:rotate(8deg) scale(1.1);
+
+}
+
+
+
